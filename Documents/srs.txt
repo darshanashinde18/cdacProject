@@ -1,0 +1,99 @@
+Document:System Requirement Specification Document
+
+Title:System Reqruiement Spefication for Employee Management System
+
+Team :
+      Employees, HR Manager,CEO,trainee,System Engineers
+
+Objective :
+           The Employee Management System provides the employer with the insights into the workforce as well as to manage 
+           the data of the employees. This system enables the managment to access all the data of the current working employees
+           in an organized way.
+
+Scope:
+          This Management system allows the top management to add or remove the details of the current working employees. 
+          The employee will be able to monitor his/her performance as well as attendance.
+
+Definitions:
+           EMS-Employee Management System
+           CEO-Chief Executive Officer
+           PDA: Portable Device Application
+	   HR-Human Resource
+
+Requirements:
+
+Functional Requirements:
+          Only employees currently working in this orginazation will be able to access this system. The employee will be able 
+          to track his/her performance as well as attendence. The employee will be able to monitor his/her salary and will be able 
+          to view all the details regarding the organization.
+
+          Only the HR department will be able to add new employee's details as well remove details in case employee leaves the 
+          orginazation. The CEO will be able to monitor all the employees details. Each individual will only view his/her details
+          only.The Employee Management System provides the employer with the insights into the workforce.
+  
+          Each individual employee will be able to edit selected informations like name, address. The HR department will be able
+          to promote any employee based on his/her performance and increase the salary as well.
+        
+NonFunctional Requirement:
+
+          Security
+                 Only the registered employee can access the details.
+                 The HR department will be able to access the system through authentication proceess.
+                 System will provide access to  the content , operations using Role based security (Authorization) (Permissions based on Role)
+                 System will automatically log of  all stakeholder after some time due to inactiveness.
+                 System will block operations for employee leaving the orginazation.
+                 System  will internally maintain secure communiction channel between Servers ( Web Servers,databse Server)
+                 Sensitive data will be always encrypted across communcation.
+
+          Availability
+	 uptime:   24* 7  available
+                  99.999%
+
+          Portablility
+	  PDA: Portable Device Application
+                   System will provide portable User Interface ( HTML, CSS, JS) through  users will be able to access employee managment portal.
+                   System can be deployed to single server, multi server, to any OS, Cloud (Azure or AWS or GCP)
+ 
+          Accessibility
+                  Only the employees working in the orginazation will be able to access this EMS portal.
+                  The CEO will be able to view all employees performance as well as attendence.
+ 
+         Reliability
+                  The system will backup all the data on regular basis and recover in short time duration to keep system operational.                 
+                  Continous updates are matained , continous Adminstration is done to keep system operational.
+	 During peak hours system will maintain same user experaince by managing load balacning .
+
+
+
+
+
+
+	Use Case Diagram:  ( UML)
+		Object Oriented Analyis and Design Notation: UML--------Unified Modeling language
+
+		Design Phase:
+
+			Use case diagram
+			Activity diagram
+			State Transition diagram
+			Class diagram
+			deployment diagram
+			object diagram
+	
+
+
+Analysis:
+	Actors:
+		Admin
+		Employees
+		Department head
+		bod
+		
+		
+	  identify essential characteristics of Employee Management System portal
+		we have identified use cases
+
+		1.Employee personal information record keeping use case
+		2. Departmentwise employees details use case
+		3.Employee performance and salary record use case
+		
