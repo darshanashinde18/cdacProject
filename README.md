@@ -1,2 +1,2 @@
-# employee-management-system
-EMS project details
+# CDAC Project
+Employee Management (HRM) System
