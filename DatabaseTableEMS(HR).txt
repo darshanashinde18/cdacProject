@@ -1,0 +1,63 @@
+mysql> desc user;
++------------------+--------------+------+-----+---------+----------------+
+| Field            | Type         | Null | Key | Default | Extra          |
++------------------+--------------+------+-----+---------+----------------+
+| id               | int          | NO   | PRI | NULL    | auto_increment |
+| email            | varchar(255) | YES  |     | NULL    |                |
+| firstName        | varchar(255) | YES  |     | NULL    |                |
+| lastName         | varchar(255) | YES  |     | NULL    |                |
+| password         | varchar(255) | YES  |     | NULL    |                | 
+| createdTimestamp | datetime(6)  | YES  |     | NULL    |                |
+| isActive         | int          | NO   |     | NULL    |                |
++------------------+--------------+------+-----+---------+----------------+
+7 rows in set (0.03 sec)
+
+mysql> desc department_tbl;
++-----------------+-------------+------+-----+---------+----------------+
+| Field           | Type        | Null | Key | Default | Extra          |
++-----------------+-------------+------+-----+---------+----------------+
+| id              | int         | NO   | PRI | NULL    | auto_increment |
+| department_name | varchar(30) | YES  | UNI | NULL    |                |
++-----------------+-------------+------+-----+---------+----------------+
+2 rows in set (0.07 sec)
+
+mysql> desc  leave_tbl;
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| id         | int          | NO   | PRI | NULL    | auto_increment |
+| end_date   | datetime(6)  | YES  |     | NULL    |                |
+| lastName   | varchar(30)  | YES  |     | NULL    |                |
+| name       | varchar(30)  | YES  |     | NULL    |                |
+| reason     | varchar(255) | YES  |     | NULL    |                |
+| start_date | datetime(6)  | YES  |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+
+mysql> desc  performance_tbl;
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| id         | int         | NO   | PRI | NULL    | auto_increment |
+| department | varchar(30) | YES  |     | NULL    |                |
+| lastName   | varchar(30) | YES  |     | NULL    |                |
+| name       | varchar(30) | YES  |     | NULL    |                |
++------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.20 sec)
+
+mysql> desc  tbl_employees;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | bigint       | NO   | PRI | NULL    | auto_increment |
+| department  | varchar(255) | YES  |     | NULL    |                |
+| designation | varchar(255) | YES  |     | NULL    |                |
+| email       | varchar(255) | YES  |     | NULL    |                |
+| lastName    | varchar(255) | YES  |     | NULL    |                |
+| location    | varchar(255) | YES  |     | NULL    |                |
+| mobile      | varchar(255) | YES  |     | NULL    |                |
+| name        | varchar(255) | YES  |     | NULL    |                |
+| salary      | varchar(255) | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+9 rows in set (0.02 sec)
